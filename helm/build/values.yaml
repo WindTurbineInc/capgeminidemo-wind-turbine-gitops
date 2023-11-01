@@ -1,0 +1,15 @@
+app:
+  name: capgeminidemo-wind-turbine-app
+  namespace: capgeminidemo
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/capgeminidemo-wind-turbine
+  org: WindTurbineInc
+  name: capgeminidemo-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: capgeminidemo/wind-turbine-app
+  tag: latest
